@@ -1,0 +1,23 @@
+@import "../global.scss";
+
+.srb{
+     height: 32px;
+     width: 96px;
+     border-radius: 16px;
+     background-color: $main-color;
+     transition: 0.2s;
+     cursor: pointer;
+}
+
+.srb > p{
+     color: #eeeeee;
+     margin: 0px;
+}
+
+.srb {
+     border: none;
+}
+
+.srb:hover{
+     background-color: adjust-color($color: $main-color, $lightness: -10%);
+}

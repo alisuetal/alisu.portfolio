@@ -1,0 +1,40 @@
+.edu-card{
+     max-width: 384px;
+     min-width: 256px;
+     background-color: #eeeeee;
+     padding: 20px 16px;
+     min-height: 128px;
+}
+
+.edu-card p{
+     margin: 0px;
+     font-weight: 700;
+}
+
+.edu-card p:first-of-type{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: start;
+     color: #888888;
+     font-size: 14px;
+}
+
+.edu-card p:first-of-type > svg{
+     padding-right: 8px;
+}
+
+.edu-card p:nth-child(2){
+     padding-top: 4px;
+     font-size: 18px;
+}
+
+.edu-card p:nth-child(3){
+     font-size: 14px;
+     color: #888888;
+}
+
+.edu-card p:nth-child(4){
+     padding-top: 12px;
+     font-size: 14px;
+}

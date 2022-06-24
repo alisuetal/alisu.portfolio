@@ -1,0 +1,25 @@
+@import "../global.scss";
+
+.button{
+     height: 56px;
+     padding: 12px 12px 12px 12px;
+     width: 90%;
+     width: 100%;
+     background-color: $main-color;
+     color: #eeeeee;
+     transition: 0.2s;
+     border: none;
+     max-width: 384px;
+     cursor: pointer;
+}
+
+.button:hover{
+     background-color: adjust-color($color: $main-color, $lightness: -10%);
+}
+
+.button p{
+     text-align: left;
+     margin: 0px;
+     font-weight: 700;
+     font-size: 16px;
+}

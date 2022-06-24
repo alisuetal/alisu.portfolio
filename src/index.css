@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, body{
+     min-height: 100vh;
+}
+
+*{
+     font-family: "Roboto-Slab";
+}
+
+@font-face {
+     font-family: Roboto-Slab;
+     src: url(./assets/fonts/RobotoSlab-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+     width: 4px;
+     height: 4px;
+}
+
+::-webkit-scrollbar-track {
+     background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+     background: #222222;
+}
+
+::-webkit-scrollbar-thumb:hover {
+     background: #000000;
+}

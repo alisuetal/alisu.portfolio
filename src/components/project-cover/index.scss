@@ -1,0 +1,40 @@
+@import "../global.scss";
+
+.project-card{
+     max-width: 256px;
+     min-height: 128px;
+}
+
+.project-card img{
+     height: 128px;
+     width: 256px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     border: none;
+}
+
+.project-card div{
+     margin-top: 4px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.project-card div > p{
+     color: $main-color;
+     font-weight: 700;
+}
+
+.project-card div > button{
+     height: 32px;
+     width: 96px;
+     border-radius: 16px;
+     background-color: $main-color;
+}
+
+.project-card div > button > p{
+     color: #eeeeee;
+     margin: 0px;
+}

@@ -1,0 +1,73 @@
+$main-color: #222222;
+$sec-color: #3665ca;
+$terc-color: #24a02a;
+$bg-color: #ffffff;
+
+h1, h2, h3{
+     color: #222222;
+     margin: 0px;
+}
+
+h1{
+     font-size: 24px;
+}
+
+h3{
+     padding-top: 12px;
+     font-size: 18px;
+     color: #444444;
+}
+
+a{
+     color: #222222;
+     font-weight: 600;
+     padding-right: 16px;
+}
+
+.sec{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     min-height: 512px;
+}
+
+.fh{
+     height: 100%;
+     width: 100%;
+}
+
+.span-main{
+     color: $sec-color;
+}
+
+.span-sec{
+     color: $terc-color;
+}
+
+.sec-title{
+     width: 90%;
+     font-size: 28px;
+     margin-top: 24px;
+}
+
+.fw-s{
+     padding-top: 24px;
+     width: 90%;
+     overflow-x: scroll;
+     display: flex;
+     flex-direction: row;
+}
+
+.fw-s > *{
+     margin-left: 20px;
+}
+
+.fw-s > *:first-of-type{
+     margin-left: 0px;
+}
+
+.sec-sub-title{
+     width: 90%;
+     color: #888888;
+}

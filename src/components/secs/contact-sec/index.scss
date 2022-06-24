@@ -1,0 +1,21 @@
+@import "../../global.scss";
+
+.sec:nth-of-type(5) > button{
+     margin-top: 64px;
+}
+
+.sec:nth-of-type(5) > p{
+     margin: 0px;
+     font-weight: 700;
+}
+
+.sec:nth-of-type(5) > p:first-of-type{
+     font-size: 14px;
+     color: $main-color;
+     margin-top: 16px;
+}
+
+.sec:nth-of-type(5) > p:last-of-type{
+     font-size: 18px;
+     color: $main-color;
+}

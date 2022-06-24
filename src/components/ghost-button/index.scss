@@ -1,0 +1,23 @@
+@import "../global.scss";
+
+.ghost-button{
+     height: 48px;
+     padding: 12px 12px 12px 12px;
+     width: 90%;
+     max-width: 224px;
+     border: 2px solid $main-color;
+     background-color: transparent;
+     color: $main-color;
+     transition: 0.2s;
+     cursor: pointer;
+}
+
+.ghost-button:hover{
+     background-color: $main-color;
+     color: #eeeeee;
+}
+
+.ghost-button p{
+     margin: 0px;
+     font-weight: 700;
+}
