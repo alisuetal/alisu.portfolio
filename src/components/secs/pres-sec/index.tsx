@@ -31,7 +31,7 @@ export default function PresSec() {
                          <a href="#job-sec">Experiência</a>
                          <a href="#contact-sec">Contato</a>
                     </div>
-                    <GhostButton text="Contato"/>               
+                    <GhostButton href="#contact-sec" text="Contato"/>               
                </div>
                <div id="pres">
                     <div>
