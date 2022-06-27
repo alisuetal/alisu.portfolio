@@ -37,7 +37,7 @@ export default function PresSec() {
                     <div>
                          <h1>Olá, eu sou <span className='span-main'>&#123;</span>Alison Alves<span className='span-main'>&#125;</span></h1>
                          <h3>Desenvolvedor fullstack com conhecimento em <span className='span-main'>[</span><span className='span-sec'>React.JS</span>, <span className='span-sec'>Flutter</span>, <span className='span-sec'>.NET</span><span className='span-main'>]</span>, entre outras linguagens e frameworks.</h3>
-                         <Button href="#edu-sec" text="Saiba mais" function={()=>{}}/>
+                         <Button href="#edu-sec" text="Saiba mais"/>
                     </div>
                     <div/>
                     <div>

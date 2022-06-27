@@ -15,7 +15,7 @@ export default function ContactSec() {
                     <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/linkedin_logo_icon_147268.png"/>
                </a>
           </div>
-          <Button href="mailto:a.docalves@gmail.com" text='Contatar' function={()=>{}}/>
+          <Button href="mailto:a.docalves@gmail.com" text='Contatar'/>
           <p>Ou copie manualmente:</p>
           <p>a.docalves@gmail.com</p>
      </div>
