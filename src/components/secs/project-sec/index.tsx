@@ -1,14 +1,14 @@
 import React from 'react';
-import { project } from '../../data';
+import { Project, project } from '../../data';
 import ProjectCard from '../../project-cover';
 import './index.scss';
 
-export default function ProjectSec() {
+export default function ProjectSec(props: {function: Function}) {
      var data = project();
      var comp = [];
 
      for(var x = 0; x < data.length; x++){
-          comp.push(<ProjectCard name={data[x].name} languages={data[x].languages} description={data[x].description} imgSrc={data[x].imgSrc} key={x}/>);
+          comp.push(<ProjectCard function={(p: Project) => props.function(p)} name={data[x].name} languages={data[x].languages} description={data[x].description} imgSrc={data[x].imgSrc} link={data[x].link} key={x}/>);
      }
 
      return (

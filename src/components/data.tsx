@@ -35,12 +35,14 @@ export class Project{
      description: string;
      languages: string[];
      imgSrc: string;
+     link: string;
 
-     constructor(name: string, languages: string[], description: string, imgSrc: string){
+     constructor(name: string, languages: string[], description: string, imgSrc: string, link: string){
           this.name = name;
           this.description = description;
           this.languages = languages;
           this.imgSrc = imgSrc;
+          this.link = link;
      }
 }
 
@@ -63,9 +65,9 @@ export function job(){
 
 export function project(){
      var data = [
-          new Project("Cruzadinha", ["Flutter", "Firebase"], "O projeto foi inspirado em Wordle e Term.ooo e, como tal, um novo conjunto de palavras é classificado todos os dias. O objetivo principal é descobrir a palavra marcada com uma estrela, e para isso, você precisa descobrir as palavras marcadas por números, verificando as dicas.", "https://i.imgur.com/LEoLdzG.png"),
-          new Project("Giffty", ["Flutter"], "Você pode definir toda a lista de convidados com suas sugestões de presentes e preços aproximados gratuitamente. Não há necessidade de e-mails ou contas. Os resultados dos pares estão sempre certos, e você pode até definir Dark Pairs.", "https://i.imgur.com/iPIXCCR.png"),
-          new Project("Portfólio", ["React.JS"], "Portfólio com propósito de mostrar minha tragetória, desde minha educação, até os projetos e experiências profissionais.", "https://i.imgur.com/ciJSfuX.png"),
+          new Project("Cruzadinha", ["Flutter", "Firebase"], "O projeto foi inspirado em Wordle e Term.ooo e, como tal, um novo conjunto de palavras é classificado todos os dias. O objetivo principal é descobrir a palavra marcada com uma estrela, e para isso, você precisa descobrir as palavras marcadas por números, verificando as dicas.", "https://i.imgur.com/LEoLdzG.png", "https://github.com/alisuetal/cruzadinha"),
+          new Project("Giffty", ["Flutter"], "Você pode definir toda a lista de convidados com suas sugestões de presentes e preços aproximados gratuitamente. Não há necessidade de e-mails ou contas. Os resultados dos pares estão sempre certos, e você pode até definir Dark Pairs.", "https://i.imgur.com/iPIXCCR.png", "https://github.com/alisuetal/giffty"),
+          new Project("Portfólio", ["React.JS"], "Portfólio com propósito de mostrar minha tragetória, desde minha educação, até os projetos e experiências profissionais.", "https://i.imgur.com/ciJSfuX.png", "https://github.com/alisuetal/portfolio"),
      ]
 
      return [...data];

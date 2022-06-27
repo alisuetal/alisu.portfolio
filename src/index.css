@@ -14,10 +14,12 @@ code {
 
 html, body{
      min-height: 100vh;
+     scroll-behavior: smooth;
 }
 
 *{
      font-family: "Roboto-Slab";
+     overflow-x: hidden;
 }
 
 @font-face {

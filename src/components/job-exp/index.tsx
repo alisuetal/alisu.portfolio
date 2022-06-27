@@ -12,7 +12,7 @@ export default function JobExp(props: {company: string, job: string, startDate: 
                <p>De {props.startDate} até {props.endDate}</p>
           </div>          
           <div>
-               <SmallRoundButton text='Detalhes'/>
+               <SmallRoundButton function={() => {}} text='Detalhes'/>
           </div>
      </div>
   );

@@ -2,10 +2,34 @@
 
 .app{
      background-color: $bg-color;
+     display: flex;
+     flex-direction: row;
+}
+
+#secs{
+     display: flex;
+     flex-direction: column;
+     flex: 1;
+}
+
+a{
+     text-decoration: none;
 }
 
 a:last-of-type{
      padding-right: 0px;
+}
+
+#f-sb{
+     height: 100vh;
+     width: 100%;
+     max-width: 384px;
+     background-color: #dddddd;
+     display: flex;
+     padding: 24px;
+     flex-direction: column;
+     overflow-y: scroll;
+     box-sizing: border-box;
 }
 
 @media only screen and (max-width: 768px) {
@@ -15,5 +39,10 @@ a:last-of-type{
 
      h3{
           font-size: 16px;
+     }
+
+     #side-bar{
+          max-width: none;
+          height: 100vh;
      }
 }
