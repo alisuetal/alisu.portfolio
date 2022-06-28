@@ -24,7 +24,7 @@ function App() {
           }
           else{
                if(job !== null){
-                    var j = <JobSideBar company={job.company} skills={job.skills} job={job.job} startDate={job.startDate} endDate={job.endDate} about={job.description}/>
+                    var j = <JobSideBar function={() => setJob(null)} company={job.company} skills={job.skills} job={job.job} startDate={job.startDate} endDate={job.endDate} about={job.description}/>
                     setSideBar(<SideBar component={() => j}/>);
                     setFsbdisplay('flex');
                }
