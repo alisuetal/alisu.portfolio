@@ -1,0 +1,75 @@
+#side-bar-job{
+     min-height: 100%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+#side-bar-job > div{
+     padding-bottom: 24px;
+}
+
+#side-bar-job > a {
+     width: 100% !important;
+}
+
+#sb-skills-lang-holder{
+     max-width: 100%;
+     overflow-x: scroll;
+     margin-top: 24px;
+}
+
+.sb-skills-lang{
+     margin-left: 8px;
+     padding: 4px 12px;
+     border-radius: 24px;
+     background-color: #222222;
+     color: #eeeeee;
+     width: 112px;
+     display: inline-flex;
+     justify-content: center;
+     margin-top: 8px;
+}
+
+.sb-skills-lang:first-of-type{
+     margin-left: 0px;
+}
+
+#sb-job-company{
+     margin: 24px 0px 0px 0px;
+     font-weight: 700;
+     color: #888;
+}
+
+#sb-job-name{
+     margin: 8px 0px 0px 0px;
+     font-size: 28px;
+     font-weight: 700;
+     color: #222222;
+}
+
+#sb-job-date{
+     margin: 8px 0px 0px 0px;
+     font-weight: 700;
+     color: #888;
+}
+
+#sb-job-about{
+     margin: 24px 0px 0px 0px;
+     font-size: 16px;
+     line-height: 1.5;
+     color: #222222;
+     text-align: justify;
+}
+
+#sb-close-row{
+     display: flex;
+     flex-direction: row;
+     justify-content: end;
+     width: 100%;
+}
+
+#sb-close-row > *{
+     cursor: pointer;
+}

@@ -1,14 +1,14 @@
 import React from 'react';
-import { job } from '../../data';
+import { Job, job } from '../../data';
 import JobExp from '../../job-exp';
 import './index.scss';
 
-export default function JobSec() {
+export default function JobSec(props: {function: Function}) {
      var data = job();
      var comp = [];
 
      for(var x = 0; x < data.length; x++){
-          comp.push(<JobExp company={data[x].institution} job={data[x].courseName} startDate={data[x].startDate} endDate={data[x].endDate} description={data[x].description} key={x}/>);
+          comp.push(<JobExp skills={data[x].skills} function={(p: Job) => props.function(p)} company={data[x].company} job={data[x].job} startDate={data[x].startDate} endDate={data[x].endDate} description={data[x].description} key={x}/>);
      }
 
      return (

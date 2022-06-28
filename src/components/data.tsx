@@ -15,18 +15,20 @@ export class Education{
 }
 
 export class Job{
-     institution: string;
-     courseName: string;
+     company: string;
+     skills: string[];
+     job: string;
      startDate: string;
      endDate: string;
      description: string;
 
-     constructor(institution: string, courseName: string, startDate: string, endDate: string, description: string){
-          this.institution = institution;
-          this.courseName = courseName;
+     constructor(company: string, skills: string[], job: string, startDate: string, endDate: string, description: string){
+          this.company = company;
+          this.job = job;
           this.startDate = startDate;
           this.endDate = endDate;
           this.description = description;
+          this.skills = skills;
      }
 }
 
@@ -57,7 +59,7 @@ export function education(){
 
 export function job(){
      var data = [
-          new Job("ModalGR", "Estágio de Desenvolvimento .NET", "Abr/2022", "Jun/2022", "- Desenvolvimento de scripts em C#;\n- Desenvolvimento de APIs utilizando .NET com frameworks como Entity e Dapper;\n- Análise de problemas reais para desevolvimento de soluções por meio da tecnologia;\n- Elaboração de projetos utilizando OPCRouter com integração do Kepware, e procedures MSSQL.\n- Desenvolvimento de scripts SQL, (procedures, tabelas, triggers, entre outros) utilizando Microsoft Server Managment;\n- Testes de APIs;- Desenvolvimento de scripts em C#; - Desenvolvimento de APIs utilizando .NET com frameworks como Entity e Dapper; - Análise de problemas reais para desevolvimento de soluções por meio da tecnologia; - Elaboração de projetos utilizando OPCRouter com integração do Kepware, e procedures MSSQL. - Desenvolvimento de scripts SQL, (procedures, tabelas, triggers, entre outros) utilizando Microsoft Server Managment; - Testes de APIs;\nCompetências: .NET Framework · ASP.NET · Microsoft SQL Server"),
+          new Job("ModalGR", ["ASP.NET", ".NET", "SQL Server", "OPCRouter"], "Estágio de Desenvolvimento .NET", "Abr/2022", "Jun/2022", "- Desenvolvimento de scripts em C#;\n- Desenvolvimento de APIs utilizando .NET com frameworks como Entity e Dapper;\n- Análise de problemas reais para desevolvimento de soluções por meio da tecnologia;\n- Elaboração de projetos utilizando OPCRouter com integração do Kepware, e procedures MSSQL.\n- Desenvolvimento de scripts SQL, (procedures, tabelas, triggers, entre outros) utilizando Microsoft Server Managment;\n- Testes de APIs;- Desenvolvimento de scripts em C#; - Desenvolvimento de APIs utilizando .NET com frameworks como Entity e Dapper; - Análise de problemas reais para desevolvimento de soluções por meio da tecnologia; - Elaboração de projetos utilizando OPCRouter com integração do Kepware, e procedures MSSQL. - Desenvolvimento de scripts SQL, (procedures, tabelas, triggers, entre outros) utilizando Microsoft Server Managment; - Testes de APIs;"),
      ]
 
      return [...data];
